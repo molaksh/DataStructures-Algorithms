@@ -1,0 +1,21 @@
+Bubble Sort notes
+
+Important to remember Bubble sort is not the most efficient way to sort data.
+This is especially because Bubble sort has a quadratic time complexity.
+ O(n^2)
+
+Also in the code snippet
+    for(int i = 0 ; i< rand.length; i++){
+      for(int j = 0; j < rand.length-1-i; j++){
+        if(rand[j] > rand[j+1]){
+          temp = rand[j];
+          rand[j] = rand[j+1];
+          rand[j+1] = temp;
+        }
+      }
+    }
+
+
+1. We are using i < rand.length and j < rand.length-1-i since we dont need to traverse to the end of the array since those would have been already filled with the largest value.
+
+2. for the actual sorting, we use temp variable temp and rand[j] and rand[j+1] to do actual sorting. here, rand[j] is the reference and rand[j+1] is the next element of the array. 
