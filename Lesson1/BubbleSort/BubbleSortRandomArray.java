@@ -1,7 +1,5 @@
 package Lesson1.BubbleSort;
 
-import java.util.Random;
-
 public class BubbleSortRandomArray {
 public static void main(String[] args){
 
