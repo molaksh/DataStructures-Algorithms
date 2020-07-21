@@ -1,22 +1,14 @@
 package Lesson1.BubbleSort;
 
+import java.util.Arrays;
+
 public class BubbleSort {
 
   public static void main(String[] args){
 
     int[] randomSequence = {23, 76, 15,47,14,38,52};
     System.out.println("The original sequence");
-    //for (int i : randomSequence) {
-      for (int i=0; i<randomSequence.length; i++){
-        if(i==randomSequence.length-1){
-          System.out.print(randomSequence[i]);
-        }else{
-          System.out.print(randomSequence[i]+", ");
-        }
-      
-    }
-    System.out.println("\n");
-
+    System.out.println(Arrays.toString(randomSequence));
     sortIt(randomSequence);
   }
 
@@ -34,17 +26,12 @@ public class BubbleSort {
     }
 
     System.out.println("the sorted list");
-    for (int j=0; j<rand.length;j++) {
-      if(j == rand.length-1){
-        System.out.print(rand[j]+"\n");
-      }else{
-        System.out.print(rand[j]+", ");
-      }
+    System.out.println(Arrays.toString(rand));
       
     }
 
 
-  }
+  
 
 
 
