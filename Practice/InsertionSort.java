@@ -8,7 +8,7 @@ public class InsertionSort {
       int current = rand[i];
       int j = i-1;
 
-      while((j>=0)&& rand[j]>=current){
+      while((j>=0)&& rand[j]>current){
         rand[j+1] = rand[j];
         j--;
 
